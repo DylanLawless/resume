@@ -1,13 +1,15 @@
 # Site
-repository: Dylan-Lawless/modern-resume-theme
+repository: DylanLawless/resume
 favicon: images/favicon.ico
-darkmode: never
 
 # Personal info 
 name: Dylan Lawless
 title: Postdoctoral researcher, Switzerland
 email: dylan.lawless@epfl.ch
 website: https://lawlessgenomics.com
+
+# Dark Mode (true/false/never)
+darkmode: never
 
 # Social links
 twitter_username: meddlaw
