@@ -2,6 +2,9 @@
 repository: DylanLawless/resume
 favicon: images/favicon.ico
 
+# Content configuration version
+version: 2
+
 # Personal info 
 name: Dylan Lawless
 title: Postdoctoral researcher, Switzerland
