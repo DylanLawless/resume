@@ -1,0 +1,25 @@
+- layout: left
+  name: University of Leeds
+  dates: 2015 - 2018
+  link: medicinehealth.leeds.ac.uk/medicine
+  qualification: PhD Genomics Immunology
+  #   quote: >
+  #     placeholder.
+  description: | # this will include new lines to allow paragraphs
+    Novel genetic discoveries in rare primary immunodeficiencies.
+
+- layout: left
+  name: Trinity College Dublin
+  dates: 2013 - 2014
+  link: tcd.ie/Biochemistry
+  qualification: MSc Immunology (Distinction)
+  description: | # this will include new lines to allow paragraphs
+    Exploring the therapeutic potential of a peptide derived from a poxviral immune evasion protein.
+
+- layout: left
+  name: University College Cork
+  dates: 2009 - 2013
+  link: www.ucc.ie/en/microbiology
+  qualification: BSc Microbiology (Honours)
+  description: | # this will include new lines to allow paragraphs
+    Majors in medical microbiology, virology,  and research on Innate immunity in microbiology.

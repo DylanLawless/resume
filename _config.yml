@@ -1,0 +1,71 @@
+# Site
+repository: Dylan-Lawless/modern-resume-theme
+favicon: images/favicon.ico
+
+# Personal info 
+name: Dylan Lawless
+title: Postdoctoral researcher, Switzerland
+email: dylan.lawless@epfl.ch
+website: https://lawlessgenomics.com
+
+# Social links
+twitter_username: meddlaw
+# github_username:  sproogen
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: lawless.ch
+linkedin_username: dylan-lawless-human-genomics
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+orcid_username: 0000-0001-8496-3725
+
+# Additional icon links
+# additional_links:
+# - title: Link name
+#   icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+  
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Scientist in Fellay Lab, Human Genomics of Infection and Immunity, EPFL, with PhD in Immunology Genetics from  Leeds Institute of Medical Research, School of Medicine, University of Leeds, UK.
+  Highly motivated & committed research scientist. Speciality: Human genomics & immunology. Style: Working with a wide range of specialists from international teams. Aim: To organise large, collaborative research projects in human health with a lasting impact based on open, reproducible science. Key skills: Collaborative, Big data analysis, Project management, Extract & visualise key data, Making complex systems simple 
+
+# Projects Section
+projects_title: Projects
+
+# Experience Section
+experience_title: Experience
+
+# Education Section
+educaton_title: Education
+
+awards_title: Awards
+
+# More Section
+# more_title: A Little More About Me
+# more_content: | # this will include new lines to allow paragraphs
+#  Other skills
+#   - Rock climbing
+#   - Gaming
+#   - Knitting
+#   - [url link](https://www.youtube.com/)
+
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: Dylan-Lawless/modern-resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+future: true
