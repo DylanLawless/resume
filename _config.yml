@@ -1,6 +1,7 @@
 # Site
 repository: Dylan-Lawless/modern-resume-theme
 favicon: images/favicon.ico
+darkmode: false
 
 # Personal info 
 name: Dylan Lawless
