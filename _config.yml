@@ -11,12 +11,14 @@ title: Postdoctoral researcher, Switzerland
 email: dylan.lawless@epfl.ch
 website: https://lawlessgenomics.com
 
+# darkmode: false
+
 # Social links
 twitter_username: meddlaw
 # github_username:  sproogen
 # dribbble_username: jekyll
 # facebook_username: jekyll
-# flickr_username: jekyll
+flickr_username: jekyll
 instagram_username: lawless.ch
 linkedin_username: dylan-lawless-human-genomics
 # pinterest_username: jekyll
@@ -62,7 +64,7 @@ awards_title: Awards
 footer_show_references: true
 
 # Build settings
-remote_theme: Dylan-Lawless/modern-resume-theme
+# remote_theme: Dylan-Lawless/modern-resume-theme
 
 sass:
   sass_dir: _sass

@@ -49,3 +49,11 @@
       <a href="http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1125">BLGY1125 - Undergrad Biology Practicals and Data Analysis</a>
       
       <a href="http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1232">BLGY1232 - Introduction to Genetics</a>
+
+- layout: left
+  name: Website creator
+  description: | # this will include new lines to allow paragraphs
+    [LawlessGenomics.com](https://lawlessgenomics.com) - A home for topics that are relevant to human precision medicine and genomics. Invitation custom genomic analysis for rare disease.
+
+    [SARSCoV2variants.com](https://sarscov2variants.com) - Open-source tracking for emerging SARS-CoV-2 variants that pose a risk based on COVID-19 vaccine genetics.
+

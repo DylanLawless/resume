@@ -1,0 +1,6 @@
+<div class="container current_position-container">
+  <h3>{{ site.current_position_title | default: "Current position" }}</h3>
+  {% for current_position in site.data.current_position %}
+    {% include {{ current_position.layout | default: 'left' | append: ".html" }} item=current_position %}
+  {% endfor %}
+</div>
