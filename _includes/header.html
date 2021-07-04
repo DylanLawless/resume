@@ -22,7 +22,7 @@
         {%- endif -%}
         {%- if site.flickr_username -%}
           <li>
-            <a target="_blank" href="https://lawlessgenomics.com" class="button button--sacnite button--round-l">
+            <a target="_blank" href="https://lawlessgenomics.com" class="button button--sacnite button--round-l" title="Personal website link">
 			  <img class="padding" src="images/favicon_package_v0.16_bw/android-chrome-512x512.png" alt="Lawless genomics link" width="50%" >
             </a>
           </li>
@@ -83,10 +83,10 @@
             </a>
           </li>
         {%- endif -%}
-        {%- if site.googleplus_username -%}
+        {%- if site.googlescholar_username -%}
           <li>
-            <a target="_blank" href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-google-plus" title="Google plus link"></i>
+            <a target="_blank" href="https://scholar.google.com/{{ site.googlescholar_username| escape }}" class="button button--sacnite button--round-l">
+              <i class="fab fa-google" title="Google scholar link"></i>
             </a>
           </li>
         {%- endif -%}
@@ -119,6 +119,11 @@
       {%- if site.website -%}
         <p>
           Web: {% include a.html href=site.website %}{{ site.website | escape }}</a>
+        </p>
+      {%- endif -%}
+      {%- if site.resumePDF -%}
+        <p>
+          PDF: <a href="https://lawlessgenomics.com/resume/latex/Dylan_Lawless.pdf">download file</a>
         </p>
       {%- endif -%}
     </div>
