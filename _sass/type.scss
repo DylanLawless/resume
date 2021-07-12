@@ -20,6 +20,7 @@ h6 {
   font-size: 1rem;
   line-height: 1.2;
   margin: 0 0 0.75rem;
+  color: #C12121;
 }
 
 p {
@@ -34,6 +35,10 @@ a:focus,
 a:hover {
 color: #355e98;
 }
+
+a:visited {
+	color: #2a4b79;
+	}
 
 h1 {
   font-size: 4rem;

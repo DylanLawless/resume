@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.27)  4 JUL 2021 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.27)  12 JUL 2021 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,17 +465,17 @@ Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 179.
  [3]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 216.
  [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
 Package babel Info: Redefining german shorthand "f
@@ -512,10 +512,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Dylan_Lawless.pdf (5 pages, 75241 bytes).
+Output written on Dylan_Lawless.pdf (5 pages, 75264 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 150 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  26 named destinations out of 1000 (max. 500000)
  7681 words of extra memory for PDF output out of 10000 (max. 10000000)
 
