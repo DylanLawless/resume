@@ -37,15 +37,14 @@ orcid_username: 0000-0001-8496-3725
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Postdoc scientist. 
-  Human genomics & immunology. 
-  Large-scale bioinformatics and wet-lab, molecular genetics, immunology. 
-  WGS, exome, SNV, CNV, rare disease, RNAseq, somatic mutation, pipeline dev, statistics.
-  Current projects in host-pathogen genomic interactions to viruses, bacterial sepsis, and genetic susceptibility to immune disorders.
-  Data types include whole genome sequencing, GWAS, pathogen sequencing, methylation, RNA, 
-  an array of other clinical data.
-  I specialise in the genetics of the primary immune system and response to infection.
-  Working with a wide range of specialists from international teams. Collaborative research projects in human health with a lasting impact based on open, reproducible science.
+  * Postdoc scientist. 
+  * Human genomics & immunology. 
+  * Large-scale bioinformatics and wet-lab, molecular genetics, immunology. 
+  * WGS, exome, SNV, CNV, rare disease, RNAseq, somatic mutation, pipeline dev, statistics.
+  - Current projects in host-pathogen genomic interactions to viruses, bacterial sepsis, and genetic susceptibility to immune disorders.
+  - Data types include whole genome sequencing, GWAS, pathogen sequencing, methylation, RNA, an array of other clinical data.
+  - I specialise in the genetics of the primary immune system and response to infection.
+  - Working with a wide range of specialists from international teams. Collaborative research projects in human health with a lasting impact based on open, reproducible science.
 
 # Projects Section
 projects_title: Projects
