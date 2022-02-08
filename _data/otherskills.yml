@@ -1,7 +1,7 @@
 - layout: left
   name: Independent research
   description: | # this will include new lines to allow paragraphs
-  State of the art methods in genomic analysis, statistics, study design, team coordination, project management, presentation, scientific writing, deductive reasoning, critical thinking, and multidisciplinary flexibility. 
+    State of the art methods in genomic analysis, statistics, study design, team coordination, project management, presentation, scientific writing, deductive reasoning, critical thinking, and multidisciplinary flexibility. 
   Leading a number of international research projects.
   Project supervision of 5 MSc thesis and PhD, and teaching on numerous courses.
 
@@ -23,8 +23,8 @@
     Association testing, Mixed models, Inference, Variance, Correlation, Regression, Repeated data testing, Sensitivity and specificity analysis, Gene burden testing ([extensive use and design](https://lawlessgenomics.com/topic/burden-test)), Sequence kernel association testing, GWAS stats, Pathogen variation stats, Dimension reduction, PCA, SVD, Population structure and stats, Genome to genome assoc statistics, Prediction modeling with multimodal data for pre-emptive intervention; Model design, Statistical automation and reproducibility, Data summary, Statistical programming in R.
 
 - layout: left
-  name: Immunology:
-  description: |
+  name: Immunology
+  description: | # this will include new lines to allow paragraphs
     Innate and adaptive;
     Primary immunodeficiencies and autoinflammatory disease;
     Functional and computational immunology;
@@ -53,11 +53,13 @@
   name: Cell biology
   description: | # this will include new lines to allow paragraphs
     Strong background in wet-lab experimentation and design. 
+
     * In vitro and in vivo models, cell lines from human, animal, cancer, primary cell models, PBMC purification and culture, murine models, animal handling, microbiology, virology.
     * Cancer immunology
     * A wide range of molecular assays; protein expression, ELISA, western blot, histology, immunohistochemistry, immunofluorescence, flow cytometry, FACS, immune biomarkers, cloning, plasmid construction, protein expression, mutagenesis, virology.
     * DNA/RNA/cDNA, purification from blood, hair follicle, saliva/buccol, FFPE, tumor, RT-PCR, RT-qPCR , Sanger seq and primer design.
     * Capture library design, manual library preparation of genomic DNA, massively parallel somatic sequencing, methylation assays, multiple sequencing platforms, clinical cohort design, gene panel design.
+
 - layout: left
   name: Student Supervision
   description: | # this will include new lines to allow paragraphs
