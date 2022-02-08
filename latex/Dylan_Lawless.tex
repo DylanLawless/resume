@@ -1,6 +1,29 @@
-\documentclass[12pt,a4paper]{article}
+% XeLaTeX
+\documentclass[11pt,a4paper]{article}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ %total={170mm,257mm},
+ left=3cm,
+ right=3cm,
+ bottom=3cm,
+ top=2cm,
+ }
+\usepackage{amssymb}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\setmainfont{Switzer-Extralight}
+\setmainfont{Satoshi-Light}[BoldFont={Satoshi-Medium}]
+\usepackage{titlesec}
+\titleformat{\section}
+  %{\Large \mdseries \color{black}}
+  {\Large \bfseries \color{black}}
+  {\thesection}{}{}
+  %\titlespacing*{\section}{0pt}{0ex plus 0ex minus 0ex}{0ex plus 0ex}
+  
 \usepackage{graphicx}
 \usepackage[german]{babel}
+\usepackage{enumitem}
 \usepackage{currvita}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -19,279 +42,527 @@
 
 \newcommand*{\ac}[1]{\mbox{#1}}
 \tolerance=600
-
+\usepackage{wrapfig}
+\usepackage{tikz}
 \begin{document}
+%  \vspace*{-1.2in} \begin{flushleft} \includegraphics[width=3cm]{profile_original} \end{flushleft}
+
+%\begin{wrapfigure}{r}{0.5\textwidth}
+ %  \vspace*{-1in} \hspace*{2in}  \includegraphics[width=2cm]{profile_original}
+%\end{wrapfigure}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=15.4cm,yshift=-1.5cm,anchor=north west] at (current page.north west){%
+    \includegraphics[width=2.5cm]{profile_original}};
+\end{tikzpicture}
+
+%\vspace*{-0.5in}
 \begin{cv}{Dylan Lawless} 
   \begin{cvlist}{Contact}
   \item School of Life Sciences, Global Health Institute, \\
-    École polytechnique fédérale de Lausanne,
+    \'Ecole Polytechnique F\'ed\'erale de Lausanne,
     Switzerland. \\
 %  \item Tel.:~(00\,41)~21\,693\,18\,74\\
 %    \href{mailto:Dylan.Lawless@protonmail.com}{Dylan.Lawless@protonmail.com} \& 
     \href{mailto:Dylan.Lawless@epfl.ch}{Dylan.Lawless@epfl.ch}\\
-  \end{cvlist}
-
-\subsection*{Background}
-Scientist in Fellay Lab, Human Genomics of Infection and Immunity, EPFL, with PhD in Immunology Genetics from Leeds Institute of Medical Research, School of Medicine, University of Leeds, UK.
- Highly motivated \& committed research scientist. Speciality: Human genomics \& immunology. 
-Style: Working with a wide range of specialists from international teams.
- Aim: To organise large, collaborative research projects in human health with a lasting impact based on open, reproducible science. 
-Key skills: Collaborative, Big data analysis, Project management, Extract \& visualise key data, Making complex systems simple.
-Academic age (time since PhD award March 2020): 1yr 4mth.
-
-%\textbf{Aims}
-%\begin{itemize}
-%\item Long term: Independent research at Uni or institute
-%\item Short term: Postdoc/project funding 
-%\item Willing to work on a "product"
-%\item But capital gain not my focus
-%\item Not physical mobility
-%\item Practical application
-%\end{itemize}
-
-\begin{cvlist}{Education}
-  \item[2018-current] \href{https://fellay-lab.epfl.ch}{Postdoctoral study EPFL}. ``Human immunology and translational genomics.''
-  \item[2015--2019] \href{https://medicinehealth.leeds.ac.uk/medicine}{PhD University of Leeds}. ``Novel genetic discoveries in rare primary immunodeficiencies.''
-  \item[2013--2014] \href{https://www.tcd.ie/biosciences/}{MSc Trinity College Dublin (Distinction)}. ``Exploring the therapeutic potential of a peptide derived from a poxviral immune evasion protein.''
-  \item[2009--2013] \href{https://www.ucc.ie/en/}{BSc University College Cork (Honours)}.
-  \end{cvlist}
-  
-\begin{cvlist}{Research}
-\item [2018-current]  \'Ecole polytechnique f\'ed\'erale de Lausanne, Switzerland, 
-	\href{https://fellay-lab.epfl.ch}{Translational genomics, Fellay Lab}.
-\item [2015--2018] University of Leeds, UK, \href{https://medicinehealth.leeds.ac.uk/homepage/160/leeds_institute_of_medical_research_at_st_jamess}{Genetic discovery in rare PID}.
-\item [2014]  \'Ecole polytechnique f\'ed\'erale de Lausanne, Switzerland, 
-	\href{https://www.epfl.ch/labs/ablasserlab/}{Intracellular Innate Immunity, Ablasser Lab}.
-\item[2014] ACM global, 
-	\href{http://www.acmgloballab.com}{Analytical Scientist}.
-\item [2013] Trinity College Dublin, Ireland, 
-	\href{https://www.tcd.ie/Biochemistry/research/bowie/}{Viral Immunology, Bowie Lab}.
-\item [2012] University College Cork, Ireland, 
-	\href{https://www.ucc.ie/en/microbiology/}{Innate immunity in microbiology}.
-
+    \href{https://lawlessgenomics.com}{LawlessGenomics.com}\\
+    \href{https://lawlessgenomics.com/resume/pdf/Dylan_Lawless.pdf}{$\circlearrowleft$ Online version}
 \end{cvlist}
 
+\section*{Education}
+\begin{cvlist}{}
+  \item[2018--current] \href{https://fellay-lab.epfl.ch}{Postdoctoral scientist EPFL}. ``Host-pathogen immunology and translational genomics.''
+  \item[2015--2019] \href{https://medicinehealth.leeds.ac.uk/medicine}{PhD University of Leeds} and \href{https://medicinehealth.leeds.ac.uk/homepage/160/leeds_institute_of_medical_research_at_st_jamess}{St. James's University Hospital}. ``Novel genetic discoveries in rare primary immunodeficiencies.''
+  \item[2013--2014] \href{https://www.tcd.ie/biosciences/}{MSc Trinity College Dublin (1st class)}. ``Exploring the therapeutic potential of a peptide derived from a poxviral immune evasion protein.''
+  \item[2009--2013] \href{https://www.ucc.ie/en/}{BSc University College Cork (Honours)}.
+  \end{cvlist}
 
-\subsection*{Publications}
-\subsubsection*{First-author:}
-\begin{enumerate}
+\section*{Research}
+\begin{cvlist}{}
+ \item [2018--current]  \'Ecole Polytechnique F\'ed\'erale de Lausanne, Switzerland, Translational genomics, \href{https://www.epfl.ch/labs/fellay-lab/}{Fellay lab}.
+  \item [2015--2018] University of Leeds, UK, Genetic discovery in rare PID, \href{https://medicinehealth.leeds.ac.uk/medicine/staff/3046/dr-sinisa-savic}{Savic lab}.
+  \item[2014--2015] \href{https://www.acmgloballab.com}{ACM global}. Analytical Scientist, clinical trials.
+  \item [2014]  \'Ecole Polytechnique F\'ed\'erale de Lausanne, Switzerland, Intracellular Innate Immunity, \href{https://www.epfl.ch/labs/ablasserlab/}{Ablasser lab}.
+  \item [2013] Trinity College Dublin, Ireland, Viral Immunology, \href{https://www.tcd.ie/Biochemistry/research/bowie/}{Bowie lab}.
+  \item [2012] University College Cork, Ireland, Innate immunity in microbiology, \href{https://www.ucc.ie/en/microbiology/}{Morgan lab}.
+  \end{cvlist}
 
+\section*{Expertise}
+ \begin{itemize}[leftmargin=*]
+
+\item \textbf{Independent research}: State of the art methods in genomic analysis, statistics, study design, team coordination, project management, presentation, scientific writing, deductive reasoning, critical thinking, and multidisciplinary flexibility. Leading a number of international research projects.
+Project supervision of 5 MSc thesis and PhD, and teaching on numerous courses.
+
+\item \textbf{Bioinformatics}:
+Responsible for human bioinformatic experiments and pipelines in PhD lab 2015-2019 and in PostDoc lab 2018-current.
+$\bullet$ Variant priorisation and variant effect prediction
+$\bullet$ WGS, exome, SNV, CNV, RNAseq, Germline, Somatic mutation, Cancer, Tumor
+$\bullet$ Handling genetic data formats FASTQ, BAM, CRAM, SAM, gVCF, ASN.1, json, plink, etc.
+$\bullet$ GATK best practices,
+Popular genomic database and reference panels,
+Popular variant prediction algorithm/databases,
+Annotation of variants with custom databases, VEP, dbNSFP, ANNOVAR, etc
+$\bullet$ \href{https://lawlessgenomics.com/topic/acgm-criteria-table-main}{ACMG} standards and guidelines for interpretation of variants,
+Nomenclature standards incl. \href{http://varnomen.hgvs.org}{HGVS}, \href{https://www.genenames.org}{HGNC}
+$\bullet$ Large-scale NGS initiatives, 
+National and international,
+Privacy in personal health,
+Big data analyses,
+Population genomics,	 
+Pedigree analysis,
+Clinical genetics.
+$\bullet$ Pathogen genetics, Viral, Bacterial, Phylogenetics and epidemiology.
+
+\item \textbf{Statistics}: 
+	Association testing, 
+	Mixed models, 
+	Inference, 
+	Variance,
+	Correlation, 
+	Regression,
+	Repeated data testing,
+	Sensitivity and specificity analysis,
+	Gene burden testing (\href{https://lawlessgenomics.com/topic/burden-test}{extensive use and design}),
+	Sequence kernel association testing,
+	GWAS stats,
+	Pathogen variation stats,
+	Dimension reduction, PCA, SVD,
+	Population structure and stats,
+	Genome to genome assoc statistics,
+	Prediction modeling with multimodal data for pre-emptive intervention;
+	Model design,
+	Statistical automation and reproducibility,
+	Data summary, 
+	Statistical programming in R.
+
+\item \textbf{Immunology}:
+	 Innate and adaptive;
+	 Primary immunodeficiencies and autoinflammatory disease;
+	 Functional and computational immunology;
+	 Host-pathogen interaction;
+	 Clinical interpretation;
+	 Immunogenomics and pharmacogenomics.
+	 
+\item \textbf{Programming}:
+	R, bash, a wide range of Unix/Linux command-line tools, git version control, server-side editing, web-hosting, html, CSS, Java, Ruby, active interest in learning other popular tools; Go, Julia, SQL etc. High performance computing scheduling, learning scalability with cloud-genomics; AWS, Azure, WDL, Cromwell, Dragon. 
+
+\item \textbf{Data visualisation}: Presentation of data to both scientific and lay audiences: \href{https://lawlessgenomics.com/portfolio}{Genomic analysis gallery}.  
+
+\item \textbf{Democratized genomics}: I work on additional research problems to provide analysis where it is not available from national services, via \href{https://lawlessgenomics.com}{LawlessGenomics} (non-diagnostic for referral to clinical genetics). I am also building both the front-end and back-end on AWS for my GATK WGS pipeline including \href{https://lawlessgenomics.com/topic/evidence_builder.html}{interactive evidence report} with $\sim$150 database scores (e.g. gnomAD, ClinVar, ClinGen, UniProt, GO, OMIM, pathogenicity predictors, ACMG reporting standards, etc.)
+
+\item \textbf{Cell biology}: Strong background in wet-lab experimentation and design.
+$\bullet$ \textit{In vitro} and \textit{in vivo} models,
+cell lines from human, animal, cancer, primary cell models, PBMC purification and culture, murine models, animal handling, microbiology, virology.
+$\bullet$ Cancer immunology
+$\bullet$ A wide range of molecular assays; protein expression, ELISA, western blot, histology, immunohistochemistry, immunofluorescence, flow cytometry, FACS, immune biomarkers, 
+cloning, plasmid construction, protein expression, mutagenesis, virology.
+$\bullet$ DNA/RNA/cDNA, purification from blood, hair follicle, saliva/buccol, FFPE, tumor, RT-PCR, RT-qPCR , Sanger seq and primer design.
+$\bullet$ Capture library design, manual library preparation of genomic DNA, 
+massively parallel somatic sequencing, methylation assays, multiple sequencing platforms, 
+clinical cohort design, gene panel design.
+\end{itemize}
+
+\section*{Scientific Outreach}
+
+\begin{itemize}[leftmargin=*]
+\item
+\textbf{Day-to-day}: 
+$\bullet$ \href{https://lawlessgenomics.com}{LawlessGenomics.com} - A home for topics that are relevant to human precision medicine and genomics. Public invitation for custom genomic analysis on rare disease.
+%\item[] 
+$\bullet$ \href{https://lawlessgenomics.com/portfolio}{Genomic analysis gallery} - Code and usage of data visualisation for genomic analysis.
+%\item[] 
+$\bullet$ \href{https://sarscov2variants.com}{SARSCoV2variants.com} - Open-source tracking for emerging SARS-CoV-2 variants that pose a risk based on COVID-19 vaccine genetics.
+%\item[] 
+$\bullet$ \href{https://github.com/DylanLawless/genomics_tools}{Genomic tools} - Modular snippets of novel genomic analysis methods.
+%\item[]
+$\bullet$ Promotional videos for EPFL Global Health Institute to attract international talent - \href{https://www.epfl.ch/schools/sv/ghi/}{GHI} homepage.
+%\item[]
+$\bullet$ Several links featuring popular work are shown in the \href{https://lawlessgenomics.com}{highlighted media} homepage section.
+%\end{itemize}
+
+%\section*{Conferences}
+\item \textbf{Conferences}: Extended list of \href{https://lawlessgenomics.com/resume/}{conference invitations and participation online}.
+% \begin{cvlist}{Conferences}
+% 	\item [2021 Geneva] \href{https://www.health2030genome.ch}{Health 2030 Genome Center.}
+% 	\item [2021 Nashville] \href{https://www.vumc.org/medicine-public-health/}{Vanderbilt University Medical Center, Asthma Research Center.}
+% 	\item [2020 Berlin] \href{https://www.eshg.org/}{The European Society
+% of Human Genetics (ESHG)}.
+% 	\item [2019 Sweden] \href{https://www.eshg.org/}{The European Society
+% of Human Genetics (ESHG)}.
+% 	\item [2018 Geneva] \href{https://broadinstitute.swoogo.com/ga4gh6thplenary}{Global Alliance for Genomics and Health (GA4GH)}.
+% 	\item [2018 Basel] \href{https://www.genopri.org}{Int Workshop on Genome Privacy and Security (GenoPri)}.
+% 	\item [2018 Basel] \href{https://transmartfoundation.org/europe-fall-meeting-2018/}{i2b2 tranSMART Academic Users Group Conference}.
+% 	\item [2018 Cambridge] \href{https://www.cambridgebioresource.group.cam.ac.uk/volunteers/rare}{NIHR BioResource Rare Diseases}.
+%   \item [2017 Edinburgh] \href{http://esid2017.kenes.com/}{European Society for Immunodeficiencies}.  
+%   \item [2017 York] \href{https://medhealth.leeds.ac.uk/events/event/86/combined_northern_and_yorkshire_annual_rheumatology_meeting_national_railway_museum_york}{Annual Northern \& Yorkshire Rheumatology}.
+%   \item [2017 Cambridge] \href{https://coursesandconferences.wellcomegenomecampus.org/Conferences.wt}{Immunogenomics of Disease, Wellcome Genome Campus}.
+%   \item [2017 Leeds]  \href{http://arc.leeds.ac.uk}{Cloud Computing for Research}.
+%   \item [2016 Cambridge] \href{http://www.cambridgebioresource.group.cam.ac.uk/volunteers/rare}{NIHR BioResource Rare Diseases}.
+%   \item [2016 Barcelona] \href{http://esid.org/}{European Society for Immunodeficiencies}.
+%   \item [2014 Bonn] \href{http://www.immunology-conference.de/}{German Society for Immunology}.
+%   \end{cvlist}
+
+%\section*{Membership}
+% \begin{itemize}
+\item \textbf{Membership}: \href{https://www.eshg.org}{European Society of Human Genetics},
+%\item 
+\href{https://www.sib.swiss}{Swiss Institute of Bioinformatics}.
+\end{itemize}
+
+\section*{Supervision and Teaching}
+$\bullet$ 2013-present: extended list of \href{https://lawlessgenomics.com/resume/}{teaching/tutoring roles online}. $\bullet$ 2015-present: supervision of staff and students, 5 MSc and several BSc student projects, MSc and BSc coursework, EPFL (Switzerland) and UoL (UK).
+
+% \begin{cvlist}{}
+%   \item [2021 MSc. Gene burden testing methods for susceptibility to infection.] % Manon Bouzereau 
+%   \item [2021 MSc. Host genomic analysis of respiratory syncytial virus infection.] % Pauline Rogg 
+%   \item [2019 MSc. Rare genetic variants associated with sepsis in intensive care.] % Robin Fallegger 
+%   \item [2019 MSc. Protein network analysis of susceptibility to viral infection.] % Zaira Seferbekova
+%  \item [2017 MSc. Ultra-deep sequencing for somatic variant discovery.] % Shelly Pathak
+%  \end{cvlist}
+%  \begin{cvlist}{}
+%   \item [BIO491]  \href{https://edu.epfl.ch/coursebook/en/new-tools-research-strategies-in-personalized-health-BIO-491?cb_cycle=bama_cyclemaster&cb_section=sv}{MSc New tools \& research strategies in personalized health (3 years)} and teaching \href{https://lawlessgenomics.com/topic/pharmacogenomics}{pharmacogenomic analysis}
+%   \item [EPFL]  \href{https://www.epfl.ch/schools/sv/education/summer-research-program/}{Summer Research Program (2 year)}
+%   \item [BIOC1302]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BIOL-1302}{Undergrad Biochemistry Practical Skills (3 years)}
+%   \item [MEDI1216]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=MEDI-1216}{Introduction to Medical Sciences (2 years)}
+%   \item [BLGY1234]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1234}{Practical Genetics (3 years)}
+%   \item [BMSC2224]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BMSC-2224}{Principles of Drug Discovery (2 years)}
+%   \item [BLGY2201]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-2201}{Introduction to Bioinformatics (3 years)}
+%   \item [BLGY1125]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1125}{Undergrad Biology Practicals and Data Analysis (3 years)}
+%   \item [BLGY1232]  \href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1232}{Introduction to Genetics (3 years)}
+% \end{cvlist}
+
+\section*{Awards}
+%\begin{itemize}[leftmargin=*]
+%\item 
+$\bullet$ \textbf{2019} The European Society of Human Genetics Poster.
+%\item 
+$\bullet$ \textbf{2018} Microsoft Azure Research Award: Data Science and Machine Learning in Predictive Genomics. 
+%\item 
+$\bullet$ \textbf{2017} Wellcome Genome Campus, Cambridge Visitor Grant.
+%\item 
+$\bullet$ \textbf{2015} University of Leeds 110 Anniversary Postgraduate Research Scholarship.
+%\item 
+$\bullet$ \textbf{2014} Trinity College Dublin 1st place postgraduate poster prize.
+%\end{itemize}
+
+%\clearpage
+\section*{Publications}
+\textbf{First-author}
+%\begin{itemize}[label=$\cdot$, leftmargin=*]
+\begin{itemize}[leftmargin=*]
 \item \emph{Blood}. Jun 2020; 
-Germline \textit{TET2} loss-of-function causes childhood immunodeficiency and lymphoma.
 \href{https://ashpublications.org/blood/article-abstract/136/9/1055/460739/Germline-TET2-loss-of-function-causes-childhood?redirectedFrom=fulltext}{doi: 10.1182/blood.2020005844}.
+Germline \textit{TET2} loss-of-function causes childhood immunodeficiency and lymphoma.
+- \href{https://lawlessgenomics.com/resume/pdf/2020BloodSpegarovaLawless_Germline\%20TET2\%20loss\%20of\%20function\%20causes\%20childhood\%20immunodeficiency\%20and\%20lymphoma.pdf}{pdf}
 
-Jarmila Stremenova Spegarova and \textbf{Dylan Lawless (shared)},  \textit{et al}.
-- \href{https://dylanlawless.github.io/resume/pdf/2020BloodSpegarovaLawless_Germline\%20TET2\%20loss\%20of\%20function\%20causes\%20childhood\%20immunodeficiency\%20and\%20lymphoma.pdf}{pdf}
+% Jarmila Stremenova Spegarova and \textbf{Dylan Lawless (shared)},  \textit{et al}.
 
 \item \emph{Journal of Clinical Immunology}. 2019 Aug;
-Predicting the occurrence of variants in \textit{RAG1} and \textit{RAG2}. 
 \href{https://link.springer.com/article/10.1007\%2Fs10875-019-00670-z}{doi: 10.1007\%2Fs10875-019-00670-z}
+Predicting the occurrence of variants in \textit{RAG1} and \textit{RAG2}. 
+- \href{https://lawlessgenomics.com/resume/pdf/2019JOCILawless_Predicting_the_Occurrence_of_Variants_in_RAG1_and_RAG2.pdf}{pdf}
 
-\textbf{Dylan Lawless}, Hana Lango Allen, James Thaventhiran, NIHR BioResource–Rare Diseases Consortium, Flavia Hodel, Rashida Anwar, Jacques Fellay, Jolan E. Walter, Sinisa Savic.
-- \href{https://dylanlawless.github.io/resume/pdf/2019JOCILawless_Predicting_the_Occurrence_of_Variants_in_RAG1_and_RAG2.pdf}{pdf}
+% \textbf{Dylan Lawless}, Hana Lango Allen, James Thaventhiran, NIHR BioResource–Rare Diseases Consortium, Flavia Hodel, Rashida Anwar, Jacques Fellay, Jolan E. Walter, Sinisa Savic.
 
 \item \emph{Frontiers in Immunology}. Jul 2018;
 \href{https://doi.org/10.3389/fimmu.2018.01527}{doi: 10.3389/fimmu.2018.01527};
 A case of AOSD caused by a novel splicing mutation in \textit{TNFAIP3} successfully treated with tocilizumab.
+- \href{https://lawlessgenomics.com/resume/pdf/2018FrontImmLawless_A_Case_of_Adult-Onset_Stills_Disease_Caused_by_a_Novel_Splicing_Mutation_in_TNFAIP3_Successfully_Treated_With_Tocilizumab.pdf}{pdf}
 
-\textbf{D. Lawless}, S. Pathak, T. Scambler, L. Ouboussand, R. Anwar, and S. Savic.
-- \href{https://dylanlawless.github.io/resume/pdf/2018FrontImmLawless_A\%20Case\%20of\%20Adult-Onset\%20Still’s\%20Disease\%20Caused\%20by\%20a\%20Novel\%20Splicing\%20Mutation\%20in\%20TNFAIP3\%20Successfully\%20Treated\%20With\%20Tocilizumab.pdf}{pdf}
+% \textbf{D. Lawless}, S. Pathak, T. Scambler, L. Ouboussand, R. Anwar, and S. Savic.
 
 \item \emph{Journal of Allergy and Clinical Immunology}. Feb 2018; 
 \href{https://doi.org/10.1016/j.jaci.2018.02.007}{doi: 10.1016/ j.jaci.2018.02.007};
 Prevalence and clinical challenges among adult PID patients with recombination-activating gene deficiency.
+- \href{https://lawlessgenomics.com/resume/pdf/2018JACILawless_Prevalence_and_clinical_challenges_among_adults_with_primary_immunodeficiency_and_recombination_activating_gene_deficiency.Letter.pdf}{pdf}
 
-\textbf{Dylan Lawless}, Christoph B Geier, Jocelyn R Farmer, Hana Allen Lango, Daniel Thwaites, Faranaz Atschekzei, Matthew Brown, David Buchbinder, Siobhan O Burns, Manish J Butte,  \textit{et al}.
-- \href{https://dylanlawless.github.io/resume/pdf/2018JACILawless_Prevalence\%20and\%20clinical\%20challenges\%20among\%20adults\%20with\%20primary\%20immunodeficiency\%20and\%20recombination-activating\%20gene\%20deficiency.Letter.pdf}{pdf}
+% \textbf{Dylan Lawless}, Christoph B Geier, Jocelyn R Farmer, Hana Allen Lango, Daniel Thwaites, Faranaz Atschekzei, Matthew Brown, David Buchbinder, Siobhan O Burns, Manish J Butte,  \textit{et al}.
 
 \item \emph{Journal of Clinical Immunology}. Oct 2017; 
 \href{https://doi.org/10.1007/s10875-017-0427-1}{doi: 10.1007/s10875-017-0427-1};
 Bialellic Mutations in Tetratricopeptide Repeat Domain 7A (TTC7A) Cause Common Variable Immunodeficiency-Like Phenotype with Enteropathy.
+- \href{https://lawlessgenomics.com/resume/pdf/2017JOCILawless_Bialellic\%20Mutations\%20in\%20Tetratricopeptide\%20Repeat\%20Domain\%207A\%20(TTC7A)\%20Cause\%20Common\%20Variable\%20Immunodeficiency-Like\%20Phenotype\%20with\%20Enteropathy\%2010.1007_s10875-017-0427-1.pdf}{pdf}
 
-\textbf{Dylan Lawless}, Anoop Mistry, Philip M. Wood, Jens Stahlschmidt, Gururaj Arumugakani, Mark Hull, David Parry, Rashida Anwar, \textit{et al}
-- \href{https://dylanlawless.github.io/resume/pdf/2017JOCILawless_Bialellic\%20Mutations\%20in\%20Tetratricopeptide\%20Repeat\%20Domain\%207A\%20(TTC7A)\%20Cause\%20Common\%20Variable\%20Immunodeficiency-Like\%20Phenotype\%20with\%20Enteropathy\%2010.1007_s10875-017-0427-1.pdf}{pdf}
+% \textbf{Dylan Lawless}, Anoop Mistry, Philip M. Wood, Jens Stahlschmidt, Gururaj Arumugakani, Mark Hull, David Parry, Rashida Anwar, \textit{et al}
 
-	\newcounter{enumTemp}
-	\setcounter{enumTemp}{\theenumi}
-\end{enumerate}
- 
-\subsubsection*{Co-authored:}
+\end{itemize}
+\textbf{Co-author}
+%\begin{itemize}[label=$\cdot$, leftmargin=*]
+\begin{itemize}[leftmargin=*]
+\item \emph{eLife}. Dec 2021;
+\href{https://elifesciences.org/articles/72559}{doi: 10.7554/elife.72559}.
+Biallelic mutations in calcium release activated channel regulator 2A (CRACR2A) cause a primary immunodeficiency disorder
+- \href{https://lawlessgenomics.com/resume/pdf/2021eLife_Wu_Rice_Biallelic_mutations_in_calcium_release_activated_channel_regulator_2A_(CRACR2A)_cause_a_primary_immunodeficiency_disorder.pdf}{pdf}
 
-\begin{enumerate}
-    \setcounter{enumi}{\theenumTemp}
+% Beibei Wu, Laura Rice, Jennifer Shrimpton, \textbf{Dylan Lawless},  \emph{et. al}.
 
-\item 
-\emph{Scientific reports}. Feb 2021;
-The influence of human genetic variation on Epstein–Barr virus sequence diversity. 
+\item \emph{Scientific reports}. Feb 2021;
 \href{https://www.nature.com/articles/s41598-021-84070-7}{doi: 10.1038/s41598-021-84070-7}
+The influence of human genetic variation on Epstein-Barr virus sequence diversity. 
+- \href{https://lawlessgenomics.com/resume/pdf/2021SciRepRueger_The_influence_of_human_genetic_variation_on_Epstein_Barr_virus_sequence_diversity.pdf}{pdf}
 
-Sina Rüeger, Christian Hammer, Alexis Loetscher, Paul J. McLaren, \textbf{Dylan Lawless}, Olivier Naret, Daniel P. Depledge, Sofia Morfopoulou, Judith Breuer, Evgeny Zdobnov, Jacques Fellay \& the Swiss HIV Cohort Study
-- \href{https://www.nature.com/articles/s41598-021-84070-7.pdf}{pdf}
+% Sina Rüeger, Christian Hammer, Alexis Loetscher, Paul J. McLaren, \textbf{Dylan Lawless}, \emph{et. al}.
 
-\item
-\emph{Arthritis \& Rheumatology}. Sep 2020;
-A novel RELA truncating mutation in familial Behçet’s Disease‐like mucocutaneous ulcerative condition. 
+\item \emph{Arthritis \& Rheumatology}. Sep 2020;
 \href{https://onlinelibrary.wiley.com/doi/10.1002/art.41531}{doi: 10.1002/art.41531}
+A novel RELA truncating mutation in familial Behçet's Disease-like mucocutaneous ulcerative condition. 
+- \href{https://lawlessgenomics.com/resume/pdf/2020ArthRheum_Adeeb_A_Novel_RELA_Truncating_Mutation_in_a_Familial_Behcets_Disease_like_Mucocutaneous_Ulcerative_Condition.pdf}{pdf}
 
-Fahd Adeeb Emma R. Dorris Niamh E. Morgan, \textbf{Dylan Lawless}, \emph{et. al}.
-- \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/art.41531}{pdf}
+% Fahd Adeeb Emma R. Dorris Niamh E. Morgan, \textbf{Dylan Lawless}, \emph{et. al}.
 
-\item  \emph{Journal of clinical immunology}. Dec 2019; 
+\item \emph{Journal of clinical immunology}. Dec 2019; 
 \href{https://link.springer.com/10.1007/s10875-019-00735-z}{doi: 10.1007/s10875-019-00735-z}
 Expanding Clinical Phenotype and Novel Insights into the Pathogenesis of ICOS Deficiency. 
+- \href{https://lawlessgenomics.com/resume/pdf/2020JOCIAbolhassaniExpandingClinicalPhenotypeAndNovelInsightsintothePathogenesisofICOSDeficiency.pdf}{pdf}
 
-Hassan Abolhassani, Yasser M. El-Sherbiny, Gururaj Arumugakani, Clive Carter, Stephen Richards, \textbf{Dylan Lawless},  \textit{et al}.
-- \href{https://dylanlawless.github.io/resume/pdf/2020JOCIAbolhassaniExpandingClinicalPhenotypeAndNovelInsightsintothe\%20PathogenesisofICOSDeficiency.pdf}{pdf}
+% Hassan Abolhassani, Yasser M. El-Sherbiny, Gururaj Arumugakani, Clive Carter, Stephen Richards, \textbf{Dylan Lawless},  \textit{et al}.
 
-\item  \emph{Blood}. Dec 2018; A novel \textit{RAG1}  mutation reveals a critical in vivo role for HMGB1/2 during V(D)J recombination.  
+\item \emph{Blood}. Dec 2018; 
+\href{https://doi.org/10.1182/blood-2018-07-866939}{doi: 10.1182/blood-2018-07-866939}
+A novel \textit{RAG1}  mutation reveals a critical in vivo role for HMGB1/2 during V(D)J recombination.  
+- \href{https://lawlessgenomics.com/resume/pdf/2018BloodThwaites_A\%20novel\%20RAG1\%20mutation\%20reveals\%20a\%20critical\%20in\%20vivo\%20role\%20for\%20HMGB1_2\%20during\%20V(D)J\%20recombination.pdf}{pdf}
 
-Daniel Thwaites, Clive Carter, \textbf{Dylan Lawless}, Sinisa Savic, and Joan Boyes.
-- \href{https://dylanlawless.github.io/resume/pdf/2018BloodThwaites_A\%20novel\%20RAG1\%20mutation\%20reveals\%20a\%20critical\%20in\%20vivo\%20role\%20for\%20HMGB1_2\%20during\%20V(D)J\%20recombination.pdf}{pdf}
+% Daniel Thwaites, Clive Carter, \textbf{Dylan Lawless}, Sinisa Savic, and Joan Boyes.
 
 \item \emph{Science Translational Medicine}. 2016 Mar 30;8(332):332ra45. 
 \href{https://doi.org/10.1126/scitranslmed.aaf1471}{doi: 10.1126/scitranslmed.aaf1471};
 Familial autoinflammation with neutrophilic dermatosis reveals a regulatory mechanism of pyrin activation.
+- \href{https://lawlessgenomics.com/resume/pdf/2016MastersScienceTM_Familial\%20autoinflammation\%20with\%20neutrophilic\%20dermatosis\%20reveals\%20a\%20regulatory\%20mechanism\%20of\%20pyrin\%20activation\%20-\%20Science\%20Translational\%20Medicine.pdf}{pdf}
 
-Seth L. Masters, Vasiliki Lagou, Isabelle Jéru, Paul J. Baker, Lien Van Eyck, David A. Parry, \textbf{Dylan Lawless}, \textit{et al}.
-- \href{https://dylanlawless.github.io/resume/pdf/2016MastersScienceTM_Familial\%20autoinflammation\%20with\%20neutrophilic\%20dermatosis\%20reveals\%20a\%20regulatory\%20mechanism\%20of\%20pyrin\%20activation\%20-\%20Science\%20Translational\%20Medicine.pdf}{pdf}
-\end{enumerate}
+% Seth L. Masters, Vasiliki Lagou, Isabelle Jéru, Paul J. Baker, Lien Van Eyck, David A. Parry, \textbf{Dylan Lawless}, \textit{et al}.
+\end{itemize}
+\textbf{Pre-prints}
 
-\subsubsection*{Pre-prints}
-\begin{itemize}
-\item  \emph{Journal}. Month; SPSS GWAS - First author.
-\item  \emph{Journal}. Month; Pathway burden viral - First author.
-\item  \emph{Journal}. Month; RSV GWAS - co-author for Tina.
-\item  \emph{Journal}. Month; RSV viral sequence - First author.
+%\begin{itemize}[label=$\cdot$, leftmargin=*]
+\begin{itemize}[leftmargin=*]
+\item Genome-wide association study of pediatric sepsis. 
+\href{https://www.overleaf.com/project/61eff91e8fa2f73ce275d18d}{link} 
+% - First author and with Jacques Fellay, Luregn Schlapbach.
+
+\item Rare variants in antiviral response genes permit severe lower respiratory tract infection in children. 
+\href{https://www.overleaf.com/project/61e671c889b3851c7165a794}{link} 
+% - First author and with Jacques Fellay, Luregn Schlapbach.
+
+\item Viral genetic determinants of persistent humanorthopneumovirus infection. 
+\href{https://www.overleaf.com/project/61718a4e077acc3d20ee68f1}{link} 
+% - First author with  Jacques Fellay, Tina Hartert.
+
+\item Genome-wide association study of susceptibility to respiratory syncytial virus infection during infancy.
+% - First author with Jacques Fellay, Tina Hartert.
+
+\item Incomplete recovery of Zebrafish retina following cryoinjury. 
+% - co-author with Daniel F. Schorderet.
+
+\item Prevalence of \textit{CFTR} variants in PID patients with bronchiectasis - an important modifying co-factor.
+% - First author with Sinisa Savic.
 \end{itemize}
 
-%\subsection*{Bioinformatics}
-%I lead the bioinformatics research for our clinical-research immunology group in Europe's second largest teaching hospital; St. James's, University of Leeds (second to the London multi-hospital network). This requires 30\% functional labwork and 70\% bioinformatic work. Experienced in genomics, whole exome sequencing, whole genome sequencing, deep-parallel sequencing for somatic variant discovery. I have worked on large dataset analysis with the Genomics England 100,000 genomes project (author of the first paper from the NIHRBR-RD PID network). My work includes routine and esoteric analysis, population genetics, data processing and storage. Experience with HiSeq 3000, Miseq, ABI Sanger sequencing, WES and custom library design and preparation. 
+\clearpage
+\setcounter{page}{1}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\titlespacing*{\section}{0pt}{0ex plus 0ex minus 0ex}{0ex plus 0ex}
+\section*{Supplemental - Interests and experience}
 
-%\subsection*{Genetics and cell biology}
-%Human and animal sample handling. Tissue and primary cell culture. Extensive molecular and cell biology techniques. Human PBMC purification and culturing. Cloning, protein transfection, expression, and purification. Microbiology and virology. Flow cytometry, ELISA, Multiplex, Western blotting. DNA and RNA purification, FFPE, Sanger sequencing, Illumina sequencing methods. PCR, qRT-PCR, cDNA synthesis. 
+\section*{Tools and databases}
+I enjoy documenting and curating datasets from a large number of the most popular genomic resources for variant annotation and interpretation.
+For example, a well curated systems make it simple to reference the tools that I use most often:
 
+\textbf{General genomics}:
+\href{http://www.ensembl.org/info/website/index.html}{Ensembl}, \href{http://www.ncbi.nlm.nih.gov/refseq/}{RefSeq}, \href{http://www.genenames.org/}{HGNC}, \href{https://www.proteinatlas.org/about}{The Human Protein Atlas}, \href{https://gtexportal.org/home/}{GTEx}, \href{https://ghr.nlm.nih.gov/gene}{GHR Genes}, \href{http://www.uniprot.org/}{UniProt}, \href{https://maayanlab.cloud/Harmonizome/dataset/Biocarta+Pathways}{BioCarta}, \href{https://www.ebi.ac.uk/gxa/home}{GNF/Atlas}, \href{http://geneontology.org/}{Gene Ontology}, \href{https://www.genome.jp/kegg/}{KEGG}, \href{https://grch37.ensembl.org/info/data/biomart/index.html}{BioMart}, \href{https://maayanlab.cloud/Harmonizome/dataset/Biocarta+Pathways}{BioCarta}, \href{https://www.ebi.ac.uk/gxa/home}{GNF/Atlas}, \href{http://geneontology.org/}{Gene Ontology}, \href{https://grch37.ensembl.org/info/data/biomart/index.html}{BioMart}, \href{http://pmglab.top/kggseq/}{KGGSeq}, \href{https://pubs.broadinstitute.org/mammals/haploreg/haploreg.php}{HaploReg}, 
+\textbf{Annotation resources}:
+\href{https://sites.google.com/site/jpopgen/dbNSFP}{dbNSFP}, \href{https://annovar.openbioinformatics.org/en/latest/}{ANNOVAR}, \href{https://genome.ucsc.edu/cgi-bin/}{UCSC hgVai}, \href{https://www.ensembl.org/info/docs/tools/vep/index.html}{Ensembl VEP}, \href{http://pcingola.github.io/SnpEff/}{SnpEff, SnpSift} 
+\textbf{Genotype analysis}:
+\href{http://zzz.bwh.harvard.edu/plink/}{PLINK}, \href{https://www.kingrelatedness.com/manual.shtml}{KING}, \href{https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html}{SHAPEIT2} :
+\href{https://mathgen.stats.ox.ac.uk/impute/impute_v2.html}{IMPUTE2}, \href{https://cnsgenomics.com/software/gcta/}{GCTA}, \href{http://locuszoom.org}{LocusZoom}, \href{https://ldlink.nci.nih.gov}{LDLink}, \href{https://fuma.ctglab.nl}{FUMA}, imputation; \href{https://www.sanger.ac.uk/tool/sanger-imputation-service/}{Sanger}, \href{http://csg.sph.umich.edu/abecasis/MACH/tour/imputation.html}{MACH}, \href{https://imputation.biodatacatalyst.nhlbi.nih.gov}{TOPMed}. 
+\textbf{Population/conservation data}:
+\href{http://exac.broadinstitute.org/}{Exac}, \href{http://gnomad.broadinstitute.org/}{gnomAD}, \href{http://compgen.cshl.edu/phast/}{PHAST}, \href{https://www.mitomap.org/foswiki/bin/view/MITOMAP/WebHome}{Mitomap}, \href{http://compgen.bscb.cornell.edu/fitCons/}{fitCons}, \href{http://hgdownload.soe.ucsc.edu/goldenPath/hg38/}{phastCons}, \href{http://db.systemsbiology.net/kaviar/Kaviar.downloads.html}{kaviar3}, \href{http://www.ncbi.nlm.nih.gov/snp}{dbSNP}, \href{https://ftp.ncbi.nlm.nih.gov/pub/dbVar/data/Homo_sapiens/by_assembly/}{dbVar}, \href{https://evs.gs.washington.edu/EVS/}{EVS, NHLBI ESP6500}, \href{http://dgv.tcag.ca/dgv/app/home}{DGV}, \href{https://bravo.sph.umich.edu/freeze5/hg38/}{Bravo}, \href{https://r4.finngen.fi}{FinnGen}, \href{https://www.internationalgenome.org/data}{1000 Genomes Project (1KG)}, \href{https://www.ukbiobank.ac.uk}{UKBB}. 
+\textbf{Drug-gene}:
+\href{https://cpicpgx.org/genes-drugs/}{CPIC Genes-Drugs}, \href{https://clinicaltrials.gov}{AACT}, \href{https://www.ema.europa.eu/en}{EMA Approved Drugs}, \href{https://www.fda.gov/drugs/informationondrugs/ucm079750.htm}{FDA Approved Drugs}, \href{https://www.fda.gov/drugs/science-and-research-drugs/table-pharmacogenomic-biomarkers-drug-labeling}{FDA Pharmacogenomics}, \href{https://www.pharmgkb.org/}{PharmGKB}, \href{http://dgidb.genome.wustl.edu/}{DGI}. 
+\textbf{Cancer}:
+\href{https://tp53.isb-cgc.org}{TP53}, \href{https://icgc.org/}{ICGC somatic}, \href{https://www.cancerhotspots.org}{CancerHotspots}, \href{http://oncotree.mskcc.org/#/home}{OncoTree}, \href{https://www.cbioportal.org/}{cBioPortal}, \href{https://gdc.cancer.gov/}{GDC}, \href{https://cancer.sanger.ac.uk/census}{Cancer Gene Census}, \href{http://cancer.sanger.ac.uk/cosmic}{COSMIC}, \href{https://ccsm.uth.edu/FusionGDB/}{FusionGDB}, \href{https://civic.genome.wustl.edu/#/home}{CIViC}. 
+\textbf{Association}:
+\href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar}, \href{https://ftp.clinicalgenome.org/}{ClinGen}, \href{http://www.ebi.ac.uk/}{GWAS Catalog}, \href{https://www.ebi.ac.uk/gene2phenotype/about}{gene2phenotype}, \href{https://thegencc.org/}{GenCC}, \href{https://mastermind.genomenon.com}{Mastermind}, \href{https://panelapp.genomicsengland.co.uk/}{GE PanelApp}, \href{https://ckb.jax.org/}{CKB}, \href{https://monarchinitiative.org/}{Mondo}, \href{http://research.nhgri.nih.gov/CGD/}{CGD}, \href{https://hpo.jax.org/app/}{HPO}, \href{https://dailymed.nlm.nih.gov}{DailyMed}, \href{https://decipher.sanger.ac.uk/}{DECIPHER}, \href{https://pmkb.weill.cornell.edu/}{PMKB}, \href{http://cpdb.molgen.mpg.de/}{Consensus}, \href{http://www.hgmd.cf.ac.uk/ac/index.php}{HGMD}. 
+\textbf{Viral genetics}:
+\href{https://www.huge-man-linux.net/man1/asn2fsa.html}{asn2fsa}, \href{qiagenbioinformatics.com}{clc novo assemble}, \href{https://www.ebi.ac.uk/Tools/msa/clustalo/}{ClustalO}, \href{https://www.ncbi.nlm.nih.gov/genbank/}{GenBank}, \href{https://www.iqtree.org/}{IQ-Tree}, \href{https://mafft.cbrc.jp/alignment/software}{MAFFT}, \href{https://clades.nextstrain.org}{NextClade CLI}, \href{https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/}{Tbl2asn}, \href{https://sourceforge.net/projects/jcvi-vigor/files/}{VIGOR}, 
+\textbf{Protein structure}:
+\href{https://www.rcsb.org}{RCSB PDB}, \href{https://alphafold.com}{alphafold}, \href{https://new.rosettacommons.org/docs/latest/Home}{RoseTTA}, \href{http://foldxsuite.crg.eu}{FoldX},
+\href{https://pubmed.ncbi.nlm.nih.gov/32881105/}{DynaMut}. 
+\textbf{Prediction}:
+\href{http://mendel.stanford.edu/SidowLab/downloads/gerp/}{GERP}, \href{https://cbcl.ics.uci.edu/doku.php/data#dann_data}{DANN SNVs}, \href{https://wwwfbm.unil.ch/domino/index.php}{Domino}, \href{https://cadd.gs.washington.edu/}{CADD}, \href{http://www.liulab.science/dbscsnv.html}{dbscSNV}, \href{https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1003484}{Essential Genes}, \href{https://www.pnas.org/content/112/44/13615}{GDI}, \href{https://academic.oup.com/nar/article/43/15/e101/2414292}{GHIS}, \href{https://academic.oup.com/bioinformatics/article/33/12/1751/2964486}{HIPred}, \href{https://academic.oup.com/bioinformatics/article/33/4/471/2525582}{LoFTool}, \href{https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001154}{P(HI) Score}, \href{https://science.sciencemag.org/content/335/6070/823}{P(rec) Score}, \href{http://genic-intolerance.org/}{RVIS}, \href{http://aloft.gersteinlab.org/}{ALoFT}, \href{http://fengbj-laboratory.org/BayesDel/BayesDel.html}{BayesDel}, \href{https://deogen2.mutaframe.com/}{DEOGEN2}, \href{http://www.columbia.edu/~ii2135/eigen.html}{Eigen}, \href{http://fathmm.biocompute.org.uk}{FATHMM}, \href{http://fathmm.biocompute.org.uk/fathmmMKL.htm}{FATHMM}, \href{https://academic.oup.com/bioinformatics/article/33/12/1751/2964486}{HIPred}, \href{https://www.genome.jp/kegg/}{KEGG}, \href{https://precomputed.list-s2.msl.ubc.ca/}{LIST-S2}, \href{http://www.genetics.wustl.edu/jflab/lrt_query.html}{LRT}, \href{https://academic.oup.com/bioinformatics/article/33/4/471/2525582}{LoFTool}, \href{http://bejerano.stanford.edu/MCAP/}{M-CAP}, \href{https://www.biorxiv.org/content/10.1101/148353v1}{MPC}, \href{https://github.com/ShenLab/missense}{MVP}, \href{http://www.liulab.science}{MetaLR,SVM,RNN}, \href{http://mutpred.mutdb.org/}{MutPred}, \href{http://mutationassessor.org/}{MutationAssessor}, \href{http://www.mutationtaster.org/}{MutationTaster}, \href{http://provean.jcvi.org/index.php}{PROVEAN}, \href{https://github.com/Illumina/PrimateAI}{PrimateAI}, \href{https://sites.google.com/site/revelgenomics/}{REVEL}, \href{https://sift.bii.a-star.edu.sg}{SIFT}, \href{https://www.broadinstitute.org/mammals-models/29-mammals-project-supplementary-info}{SiPhy}, \href{http://cadd.gs.washington.edu/}{bStatistic}, \href{http://genetics.bwh.harvard.edu/pph2/}{Polyphen-2}, \href{https://evemodel.org/}{EVE}.
 
-%\subsection*{Software}
-%Proficient with most Linux/Gnu distributions and MacOS. Experience with installation and use of bioinformatics tools. Sequence analysis methods such as the GATK best practices. My PhD used exome sequence alignment, genotyping, recalibration, variant calling, complex inheritance, etc. Handling FASTQ, BAM, gVCF, etc. Data analysis and programming with R, Python, Bash, Shell-Scripting, LaTeX, Vim, tmux, etc. Enthusiastic to learn other languages. Experienced with most common Sanger sequencing software. Experienced with professional imaging software, protein structures, data visualisation. Development of small bioinformatics tools for population genetics.
+\section*{Data visualisation}
+Communication of actionable and interpretable results is critical for success.
+I spend a significant proportion of my time on both concepts and execution.
+A selection of published work can be seen on my
+\href{https://lawlessgenomics.com/portfolio}{Genomic analysis gallery}.
 
-\subsection*{Public outreach}
-\href{https://lawlessgenomics.com}{LawlessGenomics.com} - A home for topics that are relevant to human precision medicine and genomics. Invitation custom genomic analysis for rare disease.
+The \href{https://lawlessgenomics.com/data_usage_network}{data usage tracking networks} demo gathers every instance of data usage for long-term tracking, 
+comparing individual and cross-project usage. It allows you to see what is heavily reused, unused, and potentially identifying new secondary uses.
 
-\noindent \href{https://sarscov2variants.com}{SARSCoV2variants.com} - Open-source tracking for emerging SARS-CoV-2 variants that pose a risk based on COVID-19 vaccine genetics.
+While bioinformatic evidence is often sufficient, a simplified demonstration can be more interpretable and persuasive. For example, 
+\href{https://lawlessgenomics.com/portfolio#A201}{a dominant variant}
+was visualised by confirmatory Sanger sequencing, western blotting and demonstration of alternative splicing.
+The same analysis 
+\href{https://lawlessgenomics.com/portfolio#A202}{also used a range} 
+of bioinformatic evidence databases, population genetics, and pathogenic variant prediction.
 
-\begin{cvlist}{Conferences \textnormal{(*Invited speaker)}} 
-	\item[2021 Geneva]	\href{https://www.health2030genome.ch}{Health 2030 Genome Center}.
-	\item [2021 Geneva] \href{https://www.health2030genome.ch}{Health 2030 Genome Center}.
-	\item [2021 Nashville] *\href{https://www.vumc.org/medicine-public-health/}{Vanderbilt University Medical Center, Asthma Research Center}.
-	\item [2020 Berlin] \href{https://www.eshg.org/}{The European Society
-of Human Genetics (ESHG)}.
-	\item [2019 Sweden] \href{https://www.eshg.org/}{The European Society
-of Human Genetics (ESHG)}.
-	\item [2018 Geneva] \href{https://broadinstitute.swoogo.com/ga4gh6thplenary}{Global Alliance for Genomics and Health (GA4GH)}.
-	\item [2018 Basel] \href{https://www.genopri.org}{Int Workshop on Genome Privacy and Security (GenoPri)}.
-	\item [2018 Basel] \href{https://transmartfoundation.org/europe-fall-meeting-2018/}{i2b2 tranSMART Academic Users Group Conference}.
-	\item [2018 Cambridge] *\href{https://www.cambridgebioresource.group.cam.ac.uk/volunteers/rare}{NIHR BioResource Rare Diseases}.
-  \item [2017 Edinburgh] \href{http://esid2017.kenes.com/}{European Society for Immunodeficiencies}.  
-  \item [2017 York] *\href{https://medhealth.leeds.ac.uk/events/event/86/combined_northern_and_yorkshire_annual_rheumatology_meeting_national_railway_museum_york}{Annual Northern \& Yorkshire Rheumatology}.
-  \item [2017 Cambridge] \href{https://coursesandconferences.wellcomegenomecampus.org/Conferences.wt}{Immunogenomics of Disease, Wellcome Genome Campus}.
-  \item [2017 Leeds]  \href{http://arc.leeds.ac.uk}{Cloud Computing for Research}.
-  \item [2016 Cambridge] *\href{http://www.cambridgebioresource.group.cam.ac.uk/volunteers/rare}{NIHR BioResource Rare Diseases}.
-  \item [2016 Barcelona] \href{http://esid.org/}{European Society for Immunodeficiencies}.
-  \item [2014 Bonn] \href{http://www.immunology-conference.de/}{German Society for Immunology}.
-  \end{cvlist}
-  
-\noindent Selection of posters:
-\href{https://dylanlawless.github.io/resume/blob/main/pdf/posters/2014_lawless_poxviral_evasion}{2014},
-\href{https://dylanlawless.github.io/resume/blob/main/pdf/posters/2016_ESID_lawless_RAG1}{2016a},
-\href{https://dylanlawless.github.io/resume/blob/main/pdf/posters/2016_ESID_lawless_TTC7A}{2016b},
-\href{https://dylanlawless.github.io/resume/blob/main/pdf/posters/2017_ESID_lawless_TNFAIP3_A20}{2017},
-\href{https://dylanlawless.github.io/resume/blob/main/pdf/posters/2019_ESHG_lawless_viral_succept}{2019},
-\href{https://dylanlawless.github.io/resume/blob/main/pdf/posters/2020_lawless_rare_variant_networks}{2020}.
+\section*{Democratised genomics}
+\href{https://lawlessgenomics.com/topic/evidence_builder.html}{Genetic evidence builder} is a static demo version of a free clinical genome analysis platform that does not retain data or 
+\href{https://themarkup.org/blacklight?url=lawlessgenomics.com}{track users}. 
+Identifying candidate causal variants uses 
+\href{https://lawlessgenomics.com/topic/evidence-finder-gene}{
+a large number of databases} which are inaccessible to non-bioinformaticians.
+I make the results and evidence available and interpretable to non-experts.
+The live version is being built with modular components hosted on
+\href{https://evidencetable.s3.eu-central-1.amazonaws.com/clingen-gene_disease_validity_table_original.html}{AWS} 
+with my GATK WGS pipeline to handle large-scale data requests and report reputable evidence sources, confidence, and according to standardised guidelines. 
 
-\subsection*{Awards}
-\begin{itemize}
-\item Microsoft Azure Research Award. Project title: Data Science and Machine Learning in Predictive Genomics. 
-\item University of Leeds 110 Anniversary Postgraduate Research Scholarship.
-\item TCD 1st place Postgraduate Poster prize.
-\item Wellcome Genome Campus, Cambridge Travel Grant.
-\item The European Society of Human Genetics best poster candidate.
-\end{itemize}
+Robust statistical genomic analysis requires willingness to present data and evidence; the attached link is an example of real-time \href{https://lawlessgenomics.com/rsv2021lawless.github.io/}{sharing for our collaborators} that is currently in progress for my latest pre-print. This contains preliminary results and links to code and data repository and manuscript.
 
+``Statistics on the table, please'' -
+\href{https://www.hup.harvard.edu/catalog.php?isbn=9780674009790}{Pearson}, 1910.
+The complexity of genomic data means that it is difficult to \textit{succinctly}  present the chain of events that produced evidence.
+Raw datasets are extremely large, reference and annotation datasets are even larger, processing involves heavy computation, and statistical analysis might be complex or involve private data.
+Most lay users are 
+\href{https://lawlessgenomics.com/2021/09/21/whos_afraid.html}{interested} 
+but often favour answers that are \textit{``Yes or No''} instead of \textit{confidence intervals} and \textit{Bayesian priors}.
+I spend a great amount of time learning how to present results where every step is accounted for, all data is accessible for replication, and simultaneously provide a satisfactory summary.
+Therefore, I learn about database management, web development for mobile and desktop, responsive design, live data access, and interactive data viz/statistics to fulfil this need.
 
-\subsection*{Membership}
-\begin{itemize}
-\item \href{https://www.eshg.org}{European Society of Human Genetics}
-\item \href{https://www.sib.swiss}{Swiss Institute of Bioinformatics}
-\end{itemize}
+\section*{National-scale genomics}
+The majority of my work has been for national-scale analysis.
+I have worked on
+\href{https://www.genomicsengland.co.uk/understanding-genomics/rare-disease-genomics/}{Genomics England}, specifically in 
+\href{https://bioresource.nihr.ac.uk/using-our-bioresource/our-cohorts/rare-diseases-bioresource/}{NIHR BioResource Rare Disease} 
+with two early 
+\href{https://bioresource.nihr.ac.uk/publications/?term=lawless&year=}{papers}.
+This included
+\href{https://lawlessgenomics.com/portfolio#national-scale}{national-scale analysis} of all registered immunodeficiency patients in the UK (presented at ESID 2016),
+CFTR registry database, 
+and
+\href{https://lawlessgenomics.com/portfolio#igv}{WGS analysis}
+of multiple disorders.
 
-\subsection*{Supervision and Teaching Activities}
-Supervised 4 MSc and several BSc student projects, MSc and BSc coursework supervision.
-\begin{cvlist}{}
-  \item [2021 MSc. TBD.]
-		% Manon Bouzereau
-  \item [2021 MSc.  Host genomic analysis of respiratory syncytial virus infection.]
-	  % Pauline Rogg.
-  \item [2019 MSc. Rare genetic variants associated with sepsis in intensive care.]
-	  % Zaira Seferbekova
-  \item [2019 MSc. Protein network analysis of susceptibility to viral infection.]
-	  % Robin Fallegger
- \item [2017 MSc. Ultra-deep sequencing for somatic variant discovery.]
+For the last three years I have been working on several muti-ethnic population-based studies, including the SNF Swiss Pediatric Sepsis Study (\href{https://publications.aap.org/pediatrics/article-abstract/128/2/e348/30626/Impact-of-Sepsis-on-Neurodevelopmental-Outcome-in?redirectedFrom=fulltext}{SPSS}),
+The infant susceptibility to pulmonary infections and asthma following RSV exposure in infancy birth cohort 
+(\href{https://my.vanderbilt.edu/inspire/about-me/}{INSPIRE}),
+and Environmental Influences on Child Health Outcomes (\href{https://my.vanderbilt.edu/inspire/echo-crew/}{ECHO}),
+via Vanderbilt School of Medicine.
 
-\item[\href{https://edu.epfl.ch/coursebook/en/new-tools-research-strategies-in-personalized-health-BIO-491?cb_cycle=bama_cyclemaster&cb_section=sv}{BIO491}] MSc New tools \& research strategies in personalized health
+I also lead several pathogen sequencing and epidemiology 
+projects, mainly for RSV and SARS-CoV-2, variant association analysis, pathogenicity, pre-emptive mutation screening, rapid tracking. For example, 
+my primer analysis tool 
+\href{https://lawlessgenomics.com/pages/portfolio_live/Forward_primer_match_TGCCTATGGTTCAGGGCAAG.html}{[demo output]} 
+aligns all (\href{https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType\%2F_s=Nucleotide&VirusLineage\%2F_ss=Human\%20orthopneumovirus,\%20taxid:11250&SeqType_s=Nucleotide&HostLineage_ss=Homo\%20(humans),\%20taxid:9605&VirusLineage_ss=Human\%20orthopneumovirus\%20(HRSV),\%20taxid:11250&ProtNames_ss=attachment\%20glycoprotein}{$\sim$15,000}) 
+public RSV sequences collected from 1956-2021 and checks that sequencing primers capture all known isolates.
 
-\item[\href{https://www.epfl.ch/schools/sv/education/summer-research-program/}{EPFL}] Summer Research Program
+% urls are fucked by preview, skim, macos. # to %23. use https://bitly.com
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BIOL-1302}{BIOC1302}] Undergrad Biochemistry Practical Skills
+\section*{Emerging genomic tech}
+For the last four years I have been developing statistically robust novel methods in protein-pathway network analysis for discovery of genetic determinants of rare diseases.
+The methods detect damaging variants that are easily characterised, as well as non-biased detection for variants-of-unknown-significance which would normally be uninterpretable according to current analysis standards. 
+This work has included contributions from students under my supervision, including three MSc thesis projects and one PhD candidate project. Datasets include $\sim$400 patients with rare disease, WGS, exome, GWAS, clinical data, human, bacterial, and viral genetics.
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=MEDI-1216}{MEDI1216}] Introduction to Medical Sciences 
+Simultaneously, I have been working on host-pathogen interactions with newly designed analysis methods and using natural quasi random infection by RSV, a major burden on global health, and other similar pathogens. 
+This involves long-term surveillance of $\sim$2000 infants in USA and Europe.
+We use modern methods for simultaneous analysis of exome, GWAS, RT-qPCR, serology, inflammatory immune biomakers, clinical data, viral seq data. 
+The results been very successful and are being expanded with additional cohorts.  
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1234}{BLGY1234}] Practical Genetics
+Over the last decade, bioinformatic and statistical methods have developed to expand our understanding of health beyond SNV interpretation. 
+My work in this area has included analysis of
+VDJ recombination 
+(\href{https://lawlessgenomics.com/resume/pdf/2018BloodThwaites_A\%20novel\%20RAG1\%20mutation\%20reveals\%20a\%20critical\%20in\%20vivo\%20role\%20for\%20HMGB1_2\%20during\%20V(D)J\%20recombination.pdf}{1},
+\href{https://lawlessgenomics.com/resume/pdf/2018JACILawless_Prevalence_and_clinical_challenges_among_adults_with_primary_immunodeficiency_and_recombination_activating_gene_deficiency.Letter.pdf}{2},
+\href{https://lawlessgenomics.com/resume/pdf/2019JOCILawless_Predicting_the_Occurrence_of_Variants_in_RAG1_and_RAG2.pdf}{3})
+and TCR repertoire 
+(\href{https://lawlessgenomics.com/resume/pdf/2018JACILawless_Prevalence_and_clinical_challenges_among_adults_with_primary_immunodeficiency_and_recombination_activating_gene_deficiency.Letter.pdf}{2}).
+I also increasingly encounter minimal residual disease, 
+not necessarily in 
+\href{https://lawlessgenomics.com/portfolio#TET2}{cancer alone},
+but for potent 
+dominant loss-of-function 
+(\href{https://onlinelibrary.wiley.com/doi/10.1002/art.41531}{RelA}) and
+\href{https://lawlessgenomics.com/portfolio#A201}{gain-of-function} variants that can be pre-emptively detected 
+(\href{https://lawlessgenomics.com/resume/pdf/2016MastersScienceTM_Familial\%20autoinflammation\%20with\%20neutrophilic\%20dermatosis\%20reveals\%20a\%20regulatory\%20mechanism\%20of\%20pyrin\%20activation\%20-\%20Science\%20Translational\%20Medicine.pdf}{MEFV},
+\href{https://lawlessgenomics.com/resume/pdf/2018FrontImmLawless_A_Case_of_Adult-Onset_Stills_Disease_Caused_by_a_Novel_Splicing_Mutation_in_TNFAIP3_Successfully_Treated_With_Tocilizumab.pdf}{A20}).
+I am interested in consolidating WGS, exome, and somatic pipelines, while merging RNAseq (and other omic data) to provide a single interpretation process and provide practical real-world applications like
+pre-emptive intervention, somatic risk, ctDNA profiling, PRS, or tissue-specific disease.
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BMSC-2224}{BMSC2224}] Principles of Drug Discovery
+I work on keeping up with new technologies. 
+My interests include long read seq, 
+methyl-seq epigenetic markers (I have designed protocols for cheap genome-wide methylation analysis during 
+\href{https://lawlessgenomics.com/resume/pdf/2020BloodSpegarovaLawless_Germline\%20TET2\%20loss\%20of\%20function\%20causes\%20childhood\%20immunodeficiency\%20and\%20lymphoma.pdf}{work on complete germline} \textit{TET2} LoF),
+RNA abundance and differential expression, 
+design of universal library preparations,
+conversion of germline capture for somatic analysis in clinical cases (and test cases for 
+long-term somatic risk
+[\href{https://lawlessgenomics.com/pages/portfolio_live/crew_somatic_genetics1.html}{1,}
+\href{https://lawlessgenomics.com/pages/portfolio_live/crew_somatic_genetics2.html}{2}]).
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BMSC-2224}{BMSC2224}] Principles of Drug Discovery
+I work on machine learning projects such as clinical prediction in adult and pediatric sepsis (EPFL / ETHZ). 
+This merges genetics (exome, genome, protein pathway analysis) and clinical features for patients in ICU to predict  survival and organ failure. 
+There is a clinical need for these tools; however, the only feasible implementation of real-time prediction using genetic/biomarker $\sim$outcome will be through simple, integrated services that are commercial or nationalised. 
+%As such, I am interested in learning how to scale these technically difficult data cleaning/processing requirements. 
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-2201}{BLGY2201}] Introduction to Bioinformatics
+\section*{License, accreditation interest}
+My interest in practical translational medicine requires learning about the logistics of scalability and 
+\href{https://lawlessgenomics.com/topic/pharmacogenomics#legal-requirements}{legal requirements} 
+for diagnostic genetics (e.g. Swiss federal laws under Sec 810.1).
+I have prepared pipelines that use both commercial and academic database licences and am capable of producing tools that adhere to legal requirements. 
+\href{https://www.iso.org/standard/56115.html}{ISO 15189}
+is a commonly sought standard accreditation for genetic analysis labs which is carried out by recognised accreditation services.
+% like \href{https://www.finas.fi/Sivut/default.aspx}{FINAS}.
+Here in French-speaking Switzerland, the most recently accredited NGS service is Geneva health 2030 genome center 
+\href{https://www.health2030genome.ch/dna-sequencing-platform/}{
+for clinical grade sequencing}. 
+Other additional ISO accreditation standards concern 
+\href{https://www.iso.org/search.html?q=Genomic\%20information\%20representation&hPP=10&idx=all_en&p=0&hFR\%5Bcategory\%5D\%5B0\%5D=standard}{Genomic information representation}, 
+including 
+\href{https://www.iso.org/standard/75859.html}{23092-4} (for reference software)
+or 
+\href{https://www.iso.org/standard/79882.html}{
+23092} (for transport and storage of genomic information).
+For example, I teach our students in pharmacogenomic product design to 
+define what might be best for commercial genomics in Switzerland/EU, and refer to
+\href{https://blueprintgenetics.com/certifications/}{BlueprintGenomics} as an example with international licensing and accreditation.
+I follow \href{https://www.ga4gh.org}{GA4GH} for information about many legal and ethic topics, and have worked on some genomic privacy projects for Swiss Personalized Health Network and Personalized Health and Related Technologies of the ETH Board.
+I am capable of adhering to quality control management requirements and have interest how to provide resources to the major markets including EU, North-South America, Asia, and emerging markets in Africa.
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1125}{BLGY1125}] Undergrad Biology Practicals and Data Analysis
+\section*{Clinical genetics}
+Since 2013 I have been doing primary research partnered with accredited clinical genetic labs and direct interaction with patients. 
+This includes meeting patients, collecting blood or tissue samples,
+custom \href{https://github.com/DylanLawless/gene_panels}{gene panel design}, 
+functional wet-lab \href{https://lawlessgenomics.com/portfolio#TET2}{assays} 
+(e.g. \href{10.1182/blood.2020005844}{source}),
+and tailored genomic analysis.
+I have worked with a number of hospitals world-wide (UK, Ireland, Austria, Germany, Australia, USA) and most frequently with:
+\href{https://www.leedsth.nhs.uk/a-z-of-services/the-leeds-genetics-laboratory/constitutional-genetics/molecular-genetics/next-generation-sequencing/}{[1]} National health service Leeds NGS labs,
+\href{http://dna2.leeds.ac.uk/genomics/index.php}{[2]} University of Leeds NGS research facility,
+\href{https://www.newcastle-hospitals.nhs.uk/services/clinical-genetics/}{[3]} National health service Newcastle NGS labs,
+and \href{https://www.chuv.ch/fr/medecine-precision/accueil}{[4]} CHUV Unité de médecine de précision.
 
-\item[\href{http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1232}{BLGY1232}] Introduction to Genetics
-\end{cvlist}
+\section*{Scientific writing}
+I work on producing frequent, good quality first author papers in leading journals -
+\href{https://scholar.google.com/citations?hl=de&user=RPBxP1wAAAAJ}{Google scholar}.
+I also have interest in publishing technical and lay scientific writing as listed in my scientific outreach section (CV). 
+My research involves patients with rare disease and as such, I sometimes produce reports for clinical genetic labs, e.g.
+\href{https://medicinehealth.leeds.ac.uk/homepage/160/leeds_institute_of_medical_research_at_st_jamess}{St. James's University Hospital UK}.
+For project funding, I frequently do grant writing and reviewing in UK and for Swiss national science foundation (SNSF) (e.g. 2018-2022 Postdoc mobility, Sinergia, Ambizione, National Research Programmes, etc.)
+(\href{https://www.mysnf.ch}{mysnf.ch}).
+I enjoy writing greatly and love to learn about technical document writing, publishing, language formats, typographic style, and software; i.e. 
+\href{https://www.latex-project.org/about/}{LaTeX},
+\href{https://daringfireball.net/projects/markdown/}{Markdown},
+html, css,
+version control,
+InDesign,
+etc.
 
-\subsection*{Social profiles}
-\href{https://orcid.org/0000-0001-8496-3725}{ORCID},
-\href{https://scholar.google.com/citations?user=RPBxP1wAAAAJ&hl=en&oi=ao}{Google scholar},
-\href{https://github.com/DylanLawless}{Github},
-\href{https://lawlessgenomics.com}{Personal website},
-\href{https://www.linkedin.com/in/dylan-lawless-human-genomics/}{LinkedIn}, 
-\href{https://twitter.com/meddlaw}{Twitter}.
-% \vfill
+%LaTeX and plain text source. Set in \href{https://www.fontshare.com/fonts/satoshi}{Satoshi} light and medium.
 
-%\subsection*{References}
-%Please contact for references.
-%\noindent
-%\quad
-%\begin{tabular}[t]{p{5cm} p{7cm}}
-%Jolan Walter, MD, PhD.\\
-%Tel: (727) 553 1257\\
-%\href{mailto:jolanwalter@health.usf.edu}{Jolanwalter@health.usf.edu}\\
-%\end{tabular}\quad
-%\begin{tabular}[t]{@{}l@{}}
-%Robert A. Good Chair, Associate Professor\\
-%Pediatrics \& Medicine. \\
-%Division Chief, Pediatric Allergy/Immunology.\\
-%University of South Florida at Johns Hopkins\\
-%All Children’s Hospital, St. Petersburg, FL.\\
-%Director, Jeffrey Modell Center for Immunology.
-%\end{tabular}
-
-%\vfill
-%\end{tabular}
-%\vfill
-  \cvplace{EPFL, Switzerland}
-  \date{July~2021}
-\end{cv}
+\vfill
+  \cvplace{Lausanne}
+  \date{Jan~2022}
+  \end{cv}
 \end{document}
 \endinput
-%
-% End of file `cvtest.tex'.
