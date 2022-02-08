@@ -1,22 +1,57 @@
 - layout: left
+  name: Independent research
+  description: | # this will include new lines to allow paragraphs
+  State of the art methods in genomic analysis, statistics, study design, team coordination, project management, presentation, scientific writing, deductive reasoning, critical thinking, and multidisciplinary flexibility. 
+  Leading a number of international research projects.
+  Project supervision of 5 MSc thesis and PhD, and teaching on numerous courses.
+
+- layout: left
   name: Bioinformatics
   description: | # this will include new lines to allow paragraphs
-    I lead the bioinformatics research for our clinical-research immunology group in Europe's second largest teaching hospital; St. James's, University of Leeds (second to the London multi-hospital network). This requires 30% functional labwork and 70% bioinformatic work. Experienced in genomics, whole exome sequencing, whole genome sequencing, deep-parallel sequencing for somatic variant discovery. I have worked on large dataset analysis with the Genomics England 100,000 genomes project (author of the first paper from the NIHRBR- RD PID network). My work includes routine and esoteric analysis, population genetics, data processing and storage. Experience with HiSeq 3000, Miseq, ABI Sanger sequencing, WES and custom library design and preparation.
+    Responsible for human bioinformatic experiments and pipelines in PhD lab 2015-2019 and in PostDoc lab 2018-current. • Variant priorisation and variant effect prediction • WGS, exome, SNV, CNV, RNAseq, Germline, Somatic mutation, Cancer, Tumor • Handling genetic data formats FASTQ, BAM, CRAM, SAM, gVCF, ASN.1, json, plink, etc. • GATK best practices, Popular genomic database and reference panels, Popular variant prediction algorithm/databases, Annotation of variants with custom databases, VEP, dbNSFP, ANNOVAR, etc • ACMG standards and guidelines for interpretation of variants, Nomenclature standards incl. HGVS, HGNC • Large-scale NGS initiatives, National and international, Privacy in personal health, Big data analyses, Population genomics, Pedigree analysis, Clinical genetics. • Pathogen genetics, Viral, Bacterial, Phylogenetics and epidemiology.
 
 - layout: left
-  name: Genetics and cell biology
+  name: Statistics
   description: | # this will include new lines to allow paragraphs
-      Human and animal sample handling. Tissue and primary cell culture. Extensive molecular and cell biology techniques. Human PBMC purification and culturing. Cloning, protein transfection, expression, and purification. Microbiology and virology. Flow cytometry, ELISA, Multiplex, Western blotting. DNA and RNA purification, FFPE, Sanger sequencing, Illumina sequencing methods. PCR, qRT-PCR, cDNA synthesis.
+    Association testing, Mixed models, Inference, Variance, Correlation, Regression, Repeated data testing, Sensitivity and specificity analysis, Gene burden testing ([extensive use and design](https://lawlessgenomics.com/topic/burden-test)), Sequence kernel association testing, GWAS stats, Pathogen variation stats, Dimension reduction, PCA, SVD, Population structure and stats, Genome to genome assoc statistics, Prediction modeling with multimodal data for pre-emptive intervention; Model design, Statistical automation and reproducibility, Data summary, Statistical programming in R.
 
 - layout: left
-  name: Software
-  description: | # this will include new lines to allow paragraphs
-      Proficient with most Linux/Gnu distributions and MacOS. Experience with installation and use of bioinformatics tools. Sequence analysis methods such as the GATK best practices. My PhD used exome sequence alignment, genotyping, recalibration, variant calling, complex inheritance, etc. Handling FASTQ, BAM, gVCF, etc. Data analysis and programming with R, Python, Bash, Shell-Scripting, LaTeX, Vim, tmux, etc. Enthusiastic to learn other languages. Experienced with most common Sanger sequencing software. Experienced with professional imaging software, protein structures, data visualisation. Development of small bioinformatics tools for population genetics.
+  name: Immunology:
+  description: |
+    Innate and adaptive;
+    Primary immunodeficiencies and autoinflammatory disease;
+    Functional and computational immunology;
+    Host-pathogen interaction;
+    Clinical interpretation;
+    Immunogenomics and pharmacogenomics.
 
+- layout: left
+  name: Programming
+  description: | # this will include new lines to allow paragraphs
+    R, bash, a wide range of Unix/Linux command-line tools, git version control, server-side editing, web-hosting, html, CSS, Java, Ruby, active interest in learning other popular tools; Go, Julia, SQL etc. High performance computing scheduling, learning scalability with cloud-genomics; AWS, Azure, WDL, Cromwell, Dragon.
+
+- layout: left
+  name: Data visualisation
+  description: | # this will include new lines to allow paragraphs
+    Presentation of data to both scientific and lay audiences. [Genomic analysis gallery](https://lawlessgenomics.com/portfolio).
+
+- layout: left
+  name: Democratized genomics
+  description: | # this will include new lines to allow paragraphs
+    I work on additional research problems to provide analysis where it is not available from national services, via [LawlessGenomics.com](https://lawlessgenomics.com) (non-diagnostic for referral to clinical genetics). I am also building both the front-end and back-end on AWS for my GATK WGS pipeline including interactive evidence report with ∼150 database scores (e.g. gnomAD, ClinVar, ClinGen, UniProt, GO, OMIM, pathogenicity predictors, ACMG reporting standards, etc.)
+
+    [SARSCoV2variants.com](https://sarscov2variants.com) - Open-source tracking for emerging SARS-CoV-2 variants that pose a risk based on COVID-19 vaccine genetics.
+
+- layout: left
+  name: Cell biology
+  description: | # this will include new lines to allow paragraphs
+    Strong background in wet-lab experimentation andd esign. •In vitro and in vivo models, cell lines from human, animal, cancer, primary cell models, PBMC purification and culture, murine models, animal handling, microbiology, virology. • Cancer immunology • A wide range of molecular assays; protein expression, ELISA, western blot, histology, immunohistochemistry, immunofluorescence, flow cytometry, FACS, immune biomarkers, cloning, plasmid construction, protein expression, mutagenesis, virology. • DNA/RNA/cDNA, purification from blood, hair follicle, saliva/buccol, FFPE, tumor, RT-PCR, RT-qPCR , Sanger seq and primer design. • Capture library design, manual library preparation of genomic DNA, massively parallel somatic sequencing, methylation assays, multiple sequencing platforms, clinical cohort design, gene panel design.
 - layout: left
   name: Student Supervision
   description: | # this will include new lines to allow paragraphs
-    Supervised 4 MSc and several BSc student projects, MSc coursework supervision, BSc coursework supervision.
+    Supervised 5 MSc and several BSc student projects, MSc coursework supervision, BSc coursework supervision.
+
+    2021 MSc. Gene burden testing methods for susceptibility to infection.
 
     2021 MSc. Host genomic analysis of respiratory syncytial virus infection.
 
@@ -49,11 +84,4 @@
       <a href="http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1125">BLGY1125 - Undergrad Biology Practicals and Data Analysis</a>
       
       <a href="http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=201718&M=BLGY-1232">BLGY1232 - Introduction to Genetics</a>
-
-- layout: left
-  name: Website creator
-  description: | # this will include new lines to allow paragraphs
-    [LawlessGenomics.com](https://lawlessgenomics.com) - A home for topics that are relevant to human precision medicine and genomics. Invitation custom genomic analysis for rare disease.
-
-    [SARSCoV2variants.com](https://sarscov2variants.com) - Open-source tracking for emerging SARS-CoV-2 variants that pose a risk based on COVID-19 vaccine genetics.
 
